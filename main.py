@@ -32,11 +32,10 @@ class PairsPossible(StringClass):
                     possiblePairList.append((self.strlist[i], self.strlist[j]))
         return possiblePairList
 
-
 '''Exercise_3 - Create a class SearchCommonElements which should take up a string. 
 Your task is to create a method to find common elements from string taken in StringClass and string taken in PairsPossible class and return the answer in list. 
 Note- Please use dictionary logic to find common elements.'''
-class SearchCommonElements():
+class SearchCommonElements:
 
     def __init__(self, str3):
         self.str3 = str3
@@ -48,7 +47,12 @@ class SearchCommonElements():
                 outputList += i
         return outputList
 
+'''Create a class EqualSumPairs to get the count of total number of pairs formed in class PairsPossible which has sum which is not equal to sum of other pairs. 
+Print the output for SearchCommonElements and EqualSumPairs classes'''
+class EqualSumPairs:
 
+
+#Objects
 stringValue = input("Enter String value: ")
 strBaseObj = StringClass(stringValue)
 print("The length of the given String is: \n",strBaseObj.get_length_of_string())
@@ -57,14 +61,11 @@ list2 = strBaseObj.convert_string_to_list(stringValue)
 print("The converted string to list of characters is: \n",list2)
 
 strchildObj = PairsPossible(list2)
-print("Pairs of possible comnination in the list \n", strchildObj.pairs())
+print("Pairs of possible combination in the list \n", strchildObj.pairs())
 
 strSearchCommonElements = SearchCommonElements(stringValue)
 string_check = input("Enter String value to check with: ")
 outputList = strSearchCommonElements.common_elemets(string_check)
 print("Common elements from string taken in StringClass and string taken in PairsPossible class is \n", outputList)
-
-
-
 
 
