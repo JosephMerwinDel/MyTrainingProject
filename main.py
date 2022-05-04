@@ -42,26 +42,27 @@ class SearchCommonElements:
 
     def common_elemets(self, stringValue):
         outputList = []
+        dict = {}
         for i in stringValue:
             if i in self.str3  and not i in outputList:
-                outputList += i
+                outputList.append(i)
         return outputList
 
 '''Create a class EqualSumPairs to get the count of total number of pairs formed in class PairsPossible which has sum which is not equal to sum of other pairs. 
 Print the output for SearchCommonElements and EqualSumPairs classes'''
-class EqualSumPairs:
+#class EqualSumPairs:
 
 
 #Objects
 stringValue = input("Enter String value: ")
 strBaseObj = StringClass(stringValue)
-print("The length of the given String is: \n",strBaseObj.get_length_of_string())
+print("The length of the given String is:\n",strBaseObj.get_length_of_string())
 
 list2 = strBaseObj.convert_string_to_list(stringValue)
-print("The converted string to list of characters is: \n",list2)
+print("The string converted to list of characters is: \n",list2)
 
-strchildObj = PairsPossible(list2)
-print("Pairs of possible combination in the list \n", strchildObj.pairs())
+strChildObj = PairsPossible(list2)
+print("Pairs of possible combination in the list \n", strChildObj.pairs())
 
 strSearchCommonElements = SearchCommonElements(stringValue)
 string_check = input("Enter String value to check with: ")
