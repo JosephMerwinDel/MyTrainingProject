@@ -9,7 +9,7 @@ number = int(input("Enter input: "))
 for nmber in fibinocci_sequence(number):
     print(nmber)
 
-
+###
 def executetwice(multiply):
 	def inner(num1, num2):
 		multiply(num1, num2)
