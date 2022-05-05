@@ -20,7 +20,9 @@ def executetwice(multiply):
 def multiply(num1, num2):
 	print("Decorator: \n", num1 * num2)
 
-multiply(4,4)
+number1 = int(input("Enter input 1: "))
+number2 = int(input("Enter input 2: "))
+multiply(number1,number2)
 
 
 
